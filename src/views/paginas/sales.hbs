@@ -1,0 +1,55 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+            <script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+            <div class="container">
+                <div class="row header" style="text-align:center;color:green">
+                    <h3>Hoja de ruta
+
+                    </h3>
+                </div>
+                <table id="example" class=" table table-striped table-bordered" style="width:100%">
+
+
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Direccion</th>
+                            <th>producto</th>
+                            <th>cantidad</th>
+                            <th>metodo de Pago</th>
+
+                            <th><button type="button" class="btn btn-warning"><a href="/notes/add">Agregar
+                                        Venta</a></button></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    {{#each notes}}
+                    <tbody>
+
+                        <tr>
+                            <td>{{nombre}}</td>
+                            <td>{{direccion}}</td>
+                            <td>{{producto}}</td>
+                            <td>{{cantidad}}</td>
+                            <td>{{precio}}</td>
+                            <td>{{pago}}</td>
+                            <td>
+                                <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <button type="submit" class="btn btn-danger btn-block btn-sm">Borrar</button>
+                                </form>
+                            </td>
+                            <td>
+                                <h4 class="justify-content-between -align-items-center">
+                                    <a href="/notes/edit/{{_id}}"><i class="fa-solid fa-file-pen"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    {{/each}}
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

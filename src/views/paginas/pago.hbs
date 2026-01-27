@@ -1,0 +1,317 @@
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="/img/LOGO.png" alt="" width="200" height="57">
+      <h2>Pago</h2>
+      <p class="lead">Texto</p>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Tu Carrito</span>
+          <span class="badge bg-primary rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Nombre De Producto</h6>
+              <small class="text-muted">Descripcion</small>
+            </div>
+            <span class="text-muted">Valor</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Otro Producto</h6>
+              <small class="text-muted">Descripcion</small>
+            </div>
+            <span class="text-muted">Valor</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Otro Producto</h6>
+              <small class="text-muted">Descripcion</small>
+            </div>
+            <span class="text-muted">Valor</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+              <h6 class="my-0">Codigo Promocional</h6>
+              <small>Ejemplo</small>
+            </div>
+            <span class="text-success">Valor</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (CLP)</span>
+            <strong>Valor</strong>
+          </li>
+        </ul>
+
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Promo code">
+            <button type="submit" class="btn btn-secondary">Redimir</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Direccion de envio</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Se requiere un nombre válido.
+              </div>
+            </div>
+
+
+            <div class="col-12">
+              <label for="username" class="form-label">Nombre de usuario</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="username" placeholder="" required>
+                <div class="invalid-feedback">
+                  Se requiere un usuario valido
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Gmail <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Ingrese una dirección de correo electrónico válida para actualizaciones de envío.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Direccion</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Por favor introduzca su direccion de envio.
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">Region</label>
+              <select class="form-select" id="country" required>
+                <option value="">Seleccionar</option>
+                <option>Batuco</option>
+                <option>Larapinta</option>
+                <option>Lampa</option>
+                <option>Colina</option>
+              </select>
+              <div class="invalid-feedback">
+                Porfavor ingrese una comuna valida.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">Comuna</label>
+              <select class="form-select" id="state" required>
+                <option value="">Seleccionar</option>
+                <option>California</option>
+              </select>
+              <div class="invalid-feedback">
+                Porfavor ingrese una comuna valida.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">
+              La dirección de envío es la misma que mi dirección de facturación</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Guarda esta información para la próxima vez</label>
+          </div>
+
+          <hr class="my-4">
+
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+          <div class="container py-5">
+            <!-- For demo purpose -->
+            <div class="row mb-4">
+              <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-6">Formas de pagos</h1>
+              </div>
+            </div> <!-- End -->
+            <div class="row">
+              <div class="col-lg-10 mx-auto">
+                <div class="card ">
+                  <div class="card-header">
+                    <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+                      <!-- Credit card form tabs -->
+                      <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                        <li class="nav-item"> <a data-toggle="pill" href="#credit-card" class="nav-link active "> <i
+                              class="fas fa-credit-card mr-2"></i> Tarjeta  </a> </li>
+                        <li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link "> <i
+                              class="fab fa-paypal mr-2"></i> efectivo </a> </li>
+                        <li class="nav-item"> <a data-toggle="pill" href="#net-banking" class="nav-link "> <i
+                              class="fas fa-mobile-alt mr-2"></i> transferencia </a> </li>
+                      </ul>
+                    </div> <!-- End -->
+                    <!-- Credit card form content -->
+                    <div class="tab-content">
+                      <!-- credit card info-->
+                      <div id="credit-card" class="tab-pane fade show active pt-3">
+                        <form role="form" onsubmit="event.preventDefault()">
+                          <div class="form-group"> <label for="username">
+                              <h6>Nombre del titular</h6>
+                            </label> <input type="text" name="username" placeholder="Nombre del titular" required
+                              class="form-control "> </div>
+                          <div class="form-group"> <label for="cardNumber">
+                              <h6>Numero de tarjeta</h6>
+                            </label>
+                            <div class="input-group"> <input type="text" name="cardNumber"
+                                placeholder="Numero de tarjeta" class="form-control " required>
+                              <div class="input-group-append"> <span class="input-group-text text-muted"> <i
+                                    class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i
+                                    class="fab fa-cc-amex mx-1"></i> </span> </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-8">
+                              <div class="form-group"> <label><span class="hidden-xs">
+                                    <h6>Fecha de expiracion</h6>
+                                  </span></label>
+                                <div class="input-group"> <input type="number" placeholder="MM" name=""
+                                    class="form-control" required> <input type="number" placeholder="YY" name=""
+                                    class="form-control" required>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="form-group mb-4"> <label data-toggle="tooltip"
+                                  title="Three digit CV code on the back of your card">
+                                  <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
+                                </label> <input type="text" required class="form-control"> </div>
+                            </div>
+                          </div>
+                          <div class="card-footer"> <button type="button"
+                              class="subscribe btn btn-primary btn-block shadow-sm">
+                              Confirmar Pago </button>
+                        </form>
+                      </div>
+                    </div> <!-- End -->
+                    <!-- Paypal info -->
+                    <div id="paypal" class="tab-pane fade pt-3">
+                      <h6 class="pb-2">Pago al chofer</h6>
+                      <div class="form-group "> <label class="radio-inline"> <input type="radio" name="optradio"
+                            checked>
+                          Domicilio </label> <label class="radio-inline"> <input type="radio" name="optradio"
+                            class="ml-5">Contra entrega </label></div>
+                      <p> <button type="button" class="btn btn-primary "><i class="fab fa-paypal mr-2"></i> Generar pago</button> </p>
+                      <p class="text-muted"> Nota: Con esta forma de pago, puede esperar el producto en su domicilio, al momento de llegar puede generar el pago. . </p>
+                    </div> <!-- End -->
+                    <!-- bank transfer info -->
+                    <div id="net-banking" class="tab-pane fade pt-3">
+                      <div class="form-group "> <label for="Select Your Bank">
+                          <h6>Select your Bank</h6>
+                        </label> <select class="form-control" id="ccmonth">
+                          <option value="" selected disabled>--Seleccione banco--</option>
+                          <option>Banco estado</option>
+                          <option>Banco falabella</option>
+                          <option>Banco ripley</option>
+                          <option>Banco santander</option>
+                          <option>Banco credito e inversiones</option>
+                    
+                        </select> </div>
+                      <div class="form-group">
+                        <p> <button type="button" class="btn btn-primary "><i class="fas fa-mobile-alt mr-2"></i>
+                           Proceder Pago</button> </p>
+                      </div>
+                      <p class="text-muted">Nota: Medio de pago facilita el pago inmediato directo desde tu banco </p>
+                    </div> <!-- End -->
+                    <!-- End -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+  <div class="container-fluid mt-5">
+    <div class="card bg-white mx-5">
+      <div class="row mb-4">
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <div class="footer-text pull-left">
+            <div class="d-flex">
+              <img src="/img/LOGO.png" class="font-weight-bold mr-2 px-3">
+            </div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi non
+              pariatur
+              numquam animi nam at impedit odit nisi.</p>
+            <div class="social mt-2 mb-3"> <i class="fa fa-facebook-official fa-lg"></i> <i
+                class="fa fa-instagram fa-lg"></i> <i class="fa fa-twitter fa-lg"></i> <i
+                class="fa fa-linkedin-square fa-lg"></i> <i class="fa fa-facebook"></i> </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2"></div>
+        <div class="col-md-2 col-sm-2 col-xs-2">
+          <h5 class="heading">Services</h5>
+          <ul>
+            <li>IT Consulting</li>
+            <li>Development</li>
+            <li>Cloud</li>
+            <li>Support</li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2">
+          <h5 class="heading">Industries</h5>
+          <ul class="card-text">
+            <li>Finance</li>
+            <li>Public Sector</li>
+            <li>Smart Office</li>
+            <li>Retail</li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2">
+          <h5 class="heading">Company</h5>
+          <ul class="card-text">
+            <li>About Us</li>
+            <li>Blog</li>
+            <li>Contact</li>
+            <li>Join Us</li>
+          </ul>
+        </div>
+      </div>
+      <div class="divider mb-4"> </div>
+      <div class="row" style="font-size:10px;">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="pull-left">
+            <p><i class="fa fa-copyright"></i> 2020 thezpdesign</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="pull-right mr-4 d-flex policy">
+            <div>Terms of Use</div>
+            <div>Privacy Policy</div>
+            <div>Cookie Policy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
